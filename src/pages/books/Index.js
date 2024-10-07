@@ -1,8 +1,11 @@
 const Index = () => {
     return (
         <>
-            <h1>Hello from the books / index page</h1>
-            {/* <p><Link to={`/books/1`}>Book 1</Link></p> */}
+            <h1>All Books</h1>
+            <Link to={'/books/1'}>Book 1</Link>
+            <Link to={'/books/2'}>Book 2</Link>
+            <Link to={'/books/3'}>Book 3</Link>
+            <Link to={'/books/4'}>Book 4</Link>
 
         </>
 
