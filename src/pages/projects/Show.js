@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import projectsJSON from '../../components/data/projects.json';
 
 
@@ -18,8 +18,9 @@ const Show = () => {
 
     }, []);
 
-    if(!project) return <h2>Loading...</h2>
-    
+    if (project === null) return <h2>Loading...</h2>
+    if (project === undefined) return <Navigate to={`/project/${slug}`} />
+
     return (
         <>
             <h2>Title: {project.title} </h2>
