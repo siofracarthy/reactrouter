@@ -1,0 +1,45 @@
+[
+    {
+        "slug": "react-todo-app",
+        "title": "React Todo App",
+        "description": "This was my first app",
+        "categories": ["Front-End Development"],
+        "technologies": ["React.js", "Bootstrap CSS"],
+        "images": [
+            {
+                "caption": "Screenshot 1",
+                "url": "/images/todo-1.png"
+            }
+        ],
+        "links": [
+            {
+                "title": "Website",
+                "url": "https://react-todo.web.app"
+            }
+        ],
+        "date": "2024",
+        "gitHub": "https://google.com"
+    },
+
+    {
+        "slug": "react-giphy",
+        "title": "React Giphy App",
+        "description": "This was my first app that connects to an API",
+        "categories": ["Front-End Development"],
+        "technologies": ["React.js", "Bootstrap CSS", "Axios", "APIs"],
+        "images": [
+            {
+                "caption": "Screenshot 1",
+                "url": "/images/giphy-1.png"
+            }
+        ],
+        "links": [
+            {
+                "title": "Website",
+                "url": "https://react-giphy.web.app"
+            }
+        ],
+        "date": "2024",
+        "gitHub": "https://google.com"
+    }
+]
