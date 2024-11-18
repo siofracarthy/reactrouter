@@ -1,4 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Provider } from "./components/ui/provider"
+import { Container } from "@chakra-ui/react";
 
 
 //pages 
@@ -19,25 +21,27 @@ import Footer from "./components/Footer";
 const App = () => {
 
     return (
-        <Router>
-            <Navbar />
+        <Provider>
 
+            <Router>
+                <Container>
+                    <Navbar />
+                    <Routes>
+                        <Route path={"/"} element={<Home />} />
+                        <Route path={"/about"} element={<About />} />
+                        <Route path={"/contact"} element={<Contact />} />
+                        <Route path={"/redirect-example"} element={<RedirectExample />} />
 
-            <Routes>
-                <Route path={"/"} element={<Home />} />
-                <Route path={"/about"} element={<About />} />
-                <Route path={"/contact"} element={<Contact />} />
-                <Route path={"/redirect-example"} element={<RedirectExample />} />
+                        <Route path="/projects" element={<ProjectsIndex />} />
+                        <Route path="/projects/:slug" element={<ProjectsShow />} />
 
-                <Route path="/projects" element={<ProjectsIndex />} />
-                <Route path="/projects/:slug" element={<ProjectsShow />} />
+                        <Route path="*" element={<PageNotFound />} />
+                    </Routes>
+                    <Footer />
+                </Container>
 
-                <Route path="*" element={<PageNotFound />} />
-            </Routes>
-
-            <Footer />
-
-        </Router>
+            </Router>
+        </Provider>
 
     )
 }

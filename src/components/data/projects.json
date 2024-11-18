@@ -8,7 +8,7 @@
         "images": [
             {
                 "caption": "Screenshot 1",
-                "url": "/images/todo-1.png"
+                "url": "todo-1.png"
             }
         ],
         "links": [
@@ -30,7 +30,7 @@
         "images": [
             {
                 "caption": "Screenshot 1",
-                "url": "/images/giphy-1.png"
+                "url": "giphy-1.png"
             }
         ],
         "links": [
