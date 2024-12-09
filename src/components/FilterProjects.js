@@ -1,4 +1,4 @@
-import categoriesList from '../data/categories.json;'
+import categoriesList from "../components/data/categories.json"
 
 const FilterProjects = ({ setSearchTerm, setSelectedCategory }) => {
 
